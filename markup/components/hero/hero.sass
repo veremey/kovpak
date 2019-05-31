@@ -1,0 +1,71 @@
+
+.hero
+	margin-top: 73px
+	padding: 170px 0
+	text-align: center
+	background-color: #000
+	background: #000 url('../img/content/bg.jpg') 100% 0 no-repeat
+	background-size: cover
+
+.place
+	margin-bottom: 90px
+	&__date
+		margin-bottom: 45px
+		text-align: center
+		p
+			position: relative
+			display: inline-block
+			vertical-align: top
+			text-transform: uppercase
+			font-size: 16px
+			+mr
+			&:after
+				content: ''
+				position: absolute
+				top: calc(100% + .4em)
+				left: 20px
+				right: 20px
+				height: 4px
+				background-color: $yellow
+			strong
+				+mbl
+
+.contact
+	display: inline-block
+	vertical-align: top
+	text-align: left
+	width: 100%
+	max-width: 510px
+	margin: 0 auto
+	font-size: 0
+	&__fieldset
+		position: relative
+		border: 0
+		padding: 0
+		margin: 0 0 10px
+		label
+			position: absolute
+			top: 20px
+			left: 20px
+			font-size: 16px
+			user-select: none
+			color: #949494
+			+mr
+	input
+		display: block
+		width: 100%
+		padding: 20px 20px
+		background-color: #fff
+		border-radius: 4px
+		border: 1px solid rgb(221, 221, 221)
+		font-size: 16px
+		color: #000
+		+mr
+		&:focus
+			+ label
+				display: none
+	.btn
+		width: 100%
+		padding: 20px
+	.check
+		margin-bottom: 25px

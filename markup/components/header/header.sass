@@ -1,0 +1,46 @@
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	padding: 15px 0
+	background-color: $red
+	.layout
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+.logo
+	display: block
+	strong
+		display: block
+		color: #fff
+		font-size: 24px
+		text-transform: uppercase
+		+mbl
+	span
+		display: block
+		color: #fff
+		font-size: 14px
+		+mbl
+
+.socio
+	font-size: 0
+	&__link
+		display: inline-block
+		vertical-align: top
+		margin-left: 16px
+		font-size: 0
+		&:hover
+			svg
+				fill: $white
+		svg
+			display: inline-block
+			vertical-align: top
+			height: 15px
+			fill: $yellow
+			+tr(.4s)
+		.socio__youtube
+			height: 19px
+			+try(-2px)

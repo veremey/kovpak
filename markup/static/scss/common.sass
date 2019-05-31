@@ -1,0 +1,125 @@
+
+*
+	box-sizing: border-box
+	outline: none
+	&:after,
+	&:before
+		box-sizing: inherit
+
+html
+	+selection
+		background: rgba(255, 255, 255, .2)
+		color: #000
+
+html, body
+	height: 100%
+	background-color: #fff
+body
+	color: #fff
+	font-size: 16px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-webkit-text-size-adjust: none
+	-ms-text-size-adjust: none
+	text-size-adjust: none
+
+a
+	text-decoration: none
+	outline: none
+
+img
+	max-width: 100%
+q
+	&:before,
+	&:after
+		content: none
+
+button
+	background-color: $n
+	border: none
+	outline: none
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+b, strong
+	font-weight: normal
+p
+	margin: 0
+
+
+
+.layout
+	max-width: 1170px
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto
+
+.check
+	position: relative
+	display: inline-block
+	input
+		position: absolute
+		top: 2px
+		left: 0
+		z-index: 2
+		opacity: 0
+		&:checked
+			~ span
+				user-select: none
+				&:before
+					background-color: #fff
+				&:after
+					content: ""
+					position: absolute
+					top: 4px
+					left: 4px
+					display: inline-block
+					vertical-align: top
+					width: 10px
+					height: 8px
+					background-image: url('../img/content/icon-selector-checked.png')
+					// @include bg(icon-selector-checked)
+					// +s(icon-selector-checked)
+		&:disabled
+			~ span
+				opacity: 1
+	span
+		position: relative
+		padding-left: 28px
+		left: 0
+		top: 0
+		font-size: 14px
+		color: #fff
+		cursor: pointer
+		user-select: none
+		+mr
+		z-index: 15
+		&:before
+			content: ""
+			position: absolute
+			top: -1px
+			left: 0
+			width: 18px
+			height: 18px
+			background-color: #fff
+			border-radius: 100%
+			border: 1px solid $yellow
+			cursor: pointer
+			+tr(.4s)
