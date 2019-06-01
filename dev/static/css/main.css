@@ -830,76 +830,6 @@ p {
           transform: translateY(-2px);
 }
 
-.know {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style-type: none;
-  text-align: left;
-  padding: 0 0 40px 60px;
-  margin: 0;
-  font-size: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .know {
-    padding: 0;
-    margin-bottom: 30px;
-  }
-}
-
-.know li {
-  position: relative;
-  display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  counter-increment: step-counter;
-  padding: .8em 0 .8em 8em;
-  margin-bottom: 28px;
-}
-
-@media only screen and (max-width: 650px) {
-  .know li {
-    width: 100%;
-  }
-}
-
-.know li:before {
-  content: "0" counter(step-counter);
-  margin-right: 25px;
-  font-size: 32px;
-  background-color: #94251d;
-  color: white;
-  padding: 3px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-}
-
-.know p {
-  color: #000;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
-.know mark {
-  color: #94251d;
-  background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
 .hero {
   margin-top: 0;
   padding: 170px 0;
@@ -1042,6 +972,76 @@ p {
   max-width: 230px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.know {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  text-align: left;
+  padding: 0 0 40px 60px;
+  margin: 0;
+  font-size: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .know {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.know li {
+  position: relative;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  counter-increment: step-counter;
+  padding: .8em 0 .8em 8em;
+  margin-bottom: 28px;
+}
+
+@media only screen and (max-width: 650px) {
+  .know li {
+    width: 100%;
+  }
+}
+
+.know li:before {
+  content: "0" counter(step-counter);
+  margin-right: 25px;
+  font-size: 32px;
+  background-color: #94251d;
+  color: white;
+  padding: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.know p {
+  color: #000;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.know mark {
+  color: #94251d;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .clients {
