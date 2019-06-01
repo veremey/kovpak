@@ -1,0 +1,59 @@
+
+.clients
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 0
+	margin: 0 0 15px -40px
+	list-style: none
+	font-size: 0
+	+r(900)
+		flex-wrap: wrap
+	li
+		margin-left: 40px
+		margin-bottom: 20px
+	img
+		display: inline-block
+		vertical-align: top
+		max-height: 50px
+		+gray
+		+r(700)
+			max-height: 40px
+		+r(400)
+			max-height: 26px
+
+.carusel
+	display: block
+	margin-left: -20px
+	margin-bottom: 30px
+	&__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 20px
+	&-nav
+		display: flex
+		align-items: center
+		justify-content: center
+		&__arrow
+			width: 34px
+			height: 34px
+			margin: 1px
+			background-color: $yellow
+			display: flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
+			+tr(.4s)
+			&:hover
+				background-color: #f4b500
+				svg
+					fill: #fff
+		svg
+			display: inline-block
+			vertical-align: top
+			height: 12px
+			fill: #000
+			+tr(.4s)
+		&_prev
+			+rotate(180)
+

@@ -1,0 +1,41 @@
+
+.know
+	display: flex
+	width: 100%
+	flex-wrap: wrap
+	justify-content: space-between
+	list-style-type: none
+	text-align: left
+	padding: 0 0 40px 60px
+	margin: 0
+	font-size: 0
+	+r(768)
+		padding: 0
+		margin-bottom: 30px
+	li
+		position: relative
+		display: inline-block
+		display: flex
+		width: 44%
+		align-items: center
+		counter-increment: step-counter
+		padding: .8em 0 .8em 8em
+		margin-bottom: 28px
+		+r(650)
+			width: 100%
+		&:before
+			content: "0"counter(step-counter)
+			margin-right: 25px
+			font-size: 32px
+			background-color: $red
+			color: white
+			padding: 3px
+			+mbl
+	p
+		color: #000
+		font-size: 16px
+		+mr
+	mark
+		color: $red
+		background-color: $n
+		+mb

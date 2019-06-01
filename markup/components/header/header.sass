@@ -6,10 +6,15 @@
 	width: 100%
 	padding: 15px 0
 	background-color: $red
+	z-index: 100
 	.layout
 		display: flex
 		align-items: center
 		justify-content: space-between
+	+ .hero
+		margin-top: 72px// header height - 1px
+		+r(400)
+			margin-top: 65px
 
 .logo
 	display: block
@@ -19,11 +24,15 @@
 		font-size: 24px
 		text-transform: uppercase
 		+mbl
+		+r(400)
+			font-size: 20px
 	span
 		display: block
 		color: #fff
 		font-size: 14px
 		+mbl
+		+r(400)
+			font-size: 12px
 
 .socio
 	font-size: 0

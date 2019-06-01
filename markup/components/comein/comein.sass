@@ -1,0 +1,32 @@
+
+.comein
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 100%
+	list-style: none
+	padding: 0
+	margin: 0 0 20px
+	text-align: center
+	font-size: 0
+	+r(768)
+		flex-wrap: wrap
+		margin-bottom: 0
+	li
+		display: inline-block
+		width: calc(25% - 1px)
+		margin-left: 1px
+		padding: 28px 22px 10px
+		background-color: $red
+		+r(768)
+			width: calc(50% - 1px)
+			margin-top: 1px
+		+r(600)
+			width: 100%
+			margin-left: 0
+			padding-bottom: 20px
+	p
+		font-size: 14px
+		color: #fff
+		+mr
+
